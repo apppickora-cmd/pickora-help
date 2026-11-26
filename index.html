@@ -1,494 +1,62 @@
 <!DOCTYPE html>
-<html lang="ml">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pickora ഉപയോഗ സഹായി</title>
-<meta name="theme-color" content="#0b2a7a">
-<meta name="robots" content="noindex">
-<meta name="description" content="സ്കൂൾ വണ്ടിയുടെ ഫീസും കണക്കും · ലളിതമായ വഴികാട്ടി">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Pickora">
-<meta property="og:locale" content="ml_IN">
-<meta property="og:title" content="Pickora ഉപയോഗ സഹായി">
-<meta property="og:description" content="സ്കൂൾ വണ്ടിയുടെ ഫീസും കണക്കും · ലളിതമായ വഴികാട്ടി">
-<meta property="og:url" content="https://apppickora-cmd.github.io/pickora-help/">
-<meta property="og:image" content="https://apppickora-cmd.github.io/pickora-help/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Pickora ഉപയോഗ സഹായി">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pickora ഉപയോഗ സഹായി">
-<meta name="twitter:description" content="സ്കൂൾ വണ്ടിയുടെ ഫീസും കണക്കും · ലളിതമായ വഴികാട്ടി">
-<meta name="twitter:image" content="https://apppickora-cmd.github.io/pickora-help/og.png">
+<html lang="ml"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pickora – സ്കൂൾ വാഹന ഫീസ് മാനേജർ</title>
+<meta name="description" content="സ്കൂൾ ബസ്, വാൻ ഉടമകൾക്കായുള്ള ഫീസ് മാനേജർ ആപ്പ്. ഫീസ് രേഖപ്പെടുത്താം, WhatsApp-ൽ UPI QR സഹിതം ഓർമ്മിപ്പിക്കാം, വരവും ചെലവും കാണാം.">
+<meta property="og:type" content="website"><meta property="og:title" content="Pickora – സ്കൂൾ വാഹന ഫീസ് മാനേജർ"><meta property="og:description" content="ഫീസ്, വരവ്, ചെലവ്, WhatsApp ഓർമ്മപ്പെടുത്തൽ. ഒരു ആപ്പിൽ."><meta property="og:image" content="https://pickora-info.netlify.app/img/thumb.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://pickora-info.netlify.app/img/thumb.jpg">
+<meta name="theme-color" content="#0b2a7a"><link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Noto+Sans+Malayalam:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f4f7fc;--card:#fff;--tx:#0f1c3a;--mu:#5a6785;--ac:#1560d4;--ac2:#e5eefc;--bd:#e2e8f2;--ok:#0e8f63;--ok2:#e3f5ec;--wn:#b45309;--wn2:#fff3e0;--rd:#c0392b;--rd2:#fdecea;--g1:#0b2a7a;--g2:#1e6fe0;--nav:rgba(255,255,255,.88);--sh:0 6px 24px rgba(20,40,80,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0b1220;--card:#131c30;--tx:#e8edf8;--mu:#a3afc9;--ac:#6aaaff;--ac2:#17263f;--bd:#243250;--ok:#3fd09a;--ok2:#173326;--wn:#fbbf24;--wn2:#3a2c10;--rd:#ff8f80;--rd2:#3a1f1b;--g1:#0a1f5c;--g2:#1550b8;--nav:rgba(11,18,32,.88);--sh:0 6px 24px rgba(0,0,0,.35)}}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#0b1220;--card:#131c30;--tx:#e8edf8;--mu:#a3afc9;--ac:#6aaaff;--ac2:#17263f;--bd:#243250;--ok:#3fd09a;--ok2:#173326;--wn:#fbbf24;--wn2:#3a2c10;--rd:#ff8f80;--rd2:#3a1f1b;--g1:#0a1f5c;--g2:#1550b8;--nav:rgba(11,18,32,.88);--sh:0 6px 24px rgba(0,0,0,.35)}
-*,*:before,*:after{box-sizing:border-box}
-html{scroll-padding-top:76px;scroll-behavior:smooth;height:auto}
-body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.75 system-ui,-apple-system,"Noto Sans Malayalam","Segoe UI",Roboto,sans-serif;padding-bottom:78px}
-/* top nav */
-.nav{position:sticky;top:0;z-index:50;background:var(--nav);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
-.nav>div{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:9px 16px}
-.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;color:var(--tx);text-decoration:none}
-.brand img{width:34px;height:34px;border-radius:10px;background:#fff;padding:3px}
-.nav nav{margin-left:auto;display:flex;align-items:center;gap:6px}
-.nav nav a{color:var(--mu);text-decoration:none;font-size:15px;padding:6px 10px;border-radius:10px}
-.nav nav a:hover{background:var(--ac2);color:var(--ac)}
-.nav .cta{background:var(--ac);color:#fff;font-weight:700;border-radius:12px}
-.nav .cta:hover{background:var(--ac);color:#fff;opacity:.92}
-@media(max-width:560px){.nav nav a.hide{display:none}}
-/* hero */
-header{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;padding:46px 18px 78px;text-align:center}
-.hero{max-width:760px;margin:0 auto}
-.eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:99px;padding:3px 14px;font-size:14px;margin-bottom:14px}
-h1{font-size:clamp(28px,6.5vw,44px);margin:0 0 10px;line-height:1.35;font-weight:800}
-header p{margin:0 auto;opacity:.93;font-size:clamp(16px,3.6vw,19px);max-width:560px}
-.heroBtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
-.heroBtns a{text-decoration:none;font-weight:700;border-radius:14px;padding:12px 22px;font-size:16px}
-.heroBtns .p{background:#fff;color:var(--g1)}
-.heroBtns .s{border:1.5px solid rgba(255,255,255,.55);color:#fff}
-.badges{display:flex;gap:8px 16px;justify-content:center;flex-wrap:wrap;margin:20px 0 0;padding:0;list-style:none;font-size:14.5px;opacity:.95}
-.badges li:before{content:"✓ ";font-weight:800}
-main{max-width:820px;margin:-40px auto 0;padding:0 14px 40px}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:20px;margin-bottom:16px;box-shadow:var(--sh)}
-.search{position:sticky;top:58px;z-index:20}
-.search input{width:100%;border:1.5px solid var(--bd);background:var(--card);color:var(--tx);border-radius:16px;padding:14px 16px;font:inherit;box-shadow:var(--sh)}
-.search input:focus{outline:0;border-color:var(--ac)}
-h2{font-size:22px;margin:0 0 10px;line-height:1.4}h3{font-size:17px;margin:14px 0 4px}
-/* steps */
-.quick ol{margin:8px 0 0;padding-left:0;list-style:none;counter-reset:s}
-.quick li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;margin:10px 0;padding:12px 14px;background:var(--bg);border:1px solid var(--bd);border-radius:16px}
-.quick li:before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;display:grid;place-items:center;font-weight:800;margin-top:2px}
-/* feature cards */
-.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px}
-@media(max-width:620px){.tabs{grid-template-columns:1fr 1fr}}
-.tabs div{background:var(--bg);border:1px solid var(--bd);border-radius:16px;padding:14px 8px;text-align:center;font-size:13.5px;line-height:1.5;transition:transform .15s,box-shadow .15s}
-.tabs div:hover{transform:translateY(-2px);box-shadow:var(--sh)}
-.tabs b{display:block;font-size:16px}.tabs span{font-size:28px;display:block}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 6px}
-.chips a{background:var(--card);border:1px solid var(--bd);color:var(--tx);text-decoration:none;border-radius:99px;padding:7px 14px;font-size:15px;transition:background .15s}
-.chips a:hover{background:var(--ac2);border-color:var(--ac)}
-/* FAQ-style sections */
-details.sec{background:var(--card);border:1px solid var(--bd);border-radius:18px;margin-bottom:12px;overflow:hidden;box-shadow:0 2px 10px rgba(20,40,80,.05)}
-details.sec>summary{cursor:pointer;padding:16px 18px;font-weight:700;font-size:18px;list-style:none;display:flex;align-items:center;gap:10px}
-details.sec>summary::-webkit-details-marker{display:none}
-details.sec>summary:after{content:"﹀";margin-left:auto;color:var(--mu);transition:transform .2s}
-details.sec[open]>summary:after{transform:rotate(180deg)}
-details.sec[open]>summary{border-bottom:1px solid var(--bd);background:var(--ac2)}
-.body{padding:6px 18px 18px}
-.body ul,.body ol{padding-left:22px;margin:8px 0}.body li{margin:6px 0}
-.tip,.warn,.good{border-radius:14px;padding:11px 14px;margin:12px 0;font-size:16px;border-left:4px solid}
-.tip{background:var(--ac2);border-color:var(--ac)}.warn{background:var(--wn2);border-color:var(--wn)}.good{background:var(--ok2);border-color:var(--ok)}
-.tip:before{content:"💡 ";}.warn:before{content:"⚠️ ";}.good:before{content:"✅ ";}
-b.k{background:var(--ac2);color:var(--ac);border-radius:8px;padding:1px 8px;font-weight:700;white-space:nowrap}
-.body table,table{width:100%;border-collapse:separate;border-spacing:0;margin:10px 0;font-size:15.5px;border:1px solid var(--bd);border-radius:14px;overflow:hidden;display:block;overflow-x:auto}
-th,td{border-bottom:1px solid var(--bd);padding:9px 10px;text-align:left;vertical-align:top}th{background:var(--ac2)}tr:last-child td{border-bottom:0}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:560px){.two{grid-template-columns:1fr}}
-.do{background:var(--ok2);border-radius:14px;padding:6px 14px}.dont{background:var(--rd2);border-radius:14px;padding:6px 14px}
-.btn{display:inline-block;background:var(--ac);color:#fff;text-decoration:none;border:0;border-radius:12px;padding:11px 18px;font:inherit;font-weight:700;cursor:pointer}
-.btn.o{background:var(--ac2);color:var(--ac)}
-.row{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
-#help{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:0}
-#help .btn{background:#fff;color:var(--g1)}
-footer{text-align:center;color:var(--mu);font-size:14px;padding:6px 14px 30px}
-#none{display:none;text-align:center;color:var(--mu);padding:20px}
-/* sticky bottom bar */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--nav);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--bd);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
-.bar>div{max-width:820px;margin:0 auto;display:flex;align-items:center;gap:12px}
-.bar span{font-size:14.5px;line-height:1.35;color:var(--mu)}.bar span b{display:block;color:var(--tx);font-size:16px}
-.bar .btn{margin-left:auto;white-space:nowrap}
-@media print{.nav,.bar,.search,.row,.chips,.heroBtns{display:none}body{padding-bottom:0}details.sec{break-inside:avoid}details.sec:not([open])>.body{display:block}}
+:root{--navy:#0b2a7a;--blue:#1e6bff;--orange:#ff8a1f;--teal:#12b886;--pink:#ff5c8a;--sun:#ffd23f;--violet:#7c5cff;--ink:#10204a;--bg:#f5f8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.75 'Noto Sans Malayalam',system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:'Noto Sans Malayalam',system-ui,sans-serif;font-weight:800;line-height:1.3;margin:0}
+a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.lg{display:flex;align-items:center;gap:10px;font:800 24px 'Bricolage Grotesque',sans-serif;color:#fff;text-decoration:none}.lg img{width:40px;height:40px;border-radius:10px;background:#fff}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--orange);color:#1a1200;box-shadow:0 6px 0 #c76400;transition:transform .15s}
+.btn:hover{transform:translateY(2px)}.btn.s{padding:8px 18px;box-shadow:none;background:var(--sun)}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#1740c4 55%,var(--violet) 100%);color:#fff;overflow:hidden;border-radius:0 0 48px 48px}
+.hg{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center;padding:26px 0 64px}
+.hero h1{font-size:clamp(34px,5.4vw,58px)}.hero h1 span{color:var(--sun)}.hero p{max-width:34em;opacity:.96}
+.cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:22px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chips b{background:#ffffff26;border-radius:999px;padding:3px 14px;font-size:14px;font-weight:600}
+.ps{display:flex;justify-content:center;align-items:center;padding:20px 0}
+.ph{background:#060f33;padding:6px;border-radius:30px;box-shadow:0 20px 40px #00000055;overflow:hidden}.ph img{display:block;width:100%;height:auto;border-radius:24px}
+.ps .ph{width:clamp(120px,19vw,210px);flex:none}
+.ps .ph:nth-child(1){transform:rotate(-7deg) translateY(18px);margin-right:-24px}.ps .ph:nth-child(2){z-index:2;transform:scale(1.1)}.ps .ph:nth-child(3){transform:rotate(7deg) translateY(18px);margin-left:-24px}
+section{padding:72px 0}h2{font-size:clamp(28px,4vw,42px);margin-bottom:6px}.sub{color:#4a5b82;margin:0 0 32px}
+.bt{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.t{border-radius:26px;padding:24px;grid-column:span 2}.t h3{font-size:21px;margin:6px 0}.t p{margin:0}.t .e{font-size:34px;line-height:1.3}
+.w3{grid-column:span 3}.w4{grid-column:span 4}
+.c1{background:var(--blue);color:#fff}.c2{background:var(--orange);color:#2a1500}.c3{background:var(--teal);color:#032b1e}.c4{background:var(--pink);color:#3b0016}.c5{background:var(--sun);color:#3a2d00}.c6{background:var(--navy);color:#fff}.c7{background:var(--violet);color:#fff}.c8{background:#fff;border:2px solid #dbe4fb}
+.gal{background:linear-gradient(180deg,#fff3dc,#ffe3ef);border-radius:48px}
+.gr{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:26px 18px;justify-items:center}
+.gr figure{margin:0;text-align:center;width:100%;max-width:230px}.gr figcaption{margin-top:12px;font-weight:700}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;counter-reset:s}
+.st div{background:#fff;border-radius:22px;padding:24px;counter-increment:s;border-top:8px solid var(--orange)}.st div:nth-child(2){border-color:var(--teal)}.st div:nth-child(3){border-color:var(--pink)}
+.st div:before{content:counter(s);display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;font:800 18px 'Bricolage Grotesque',sans-serif}
+.st h3{margin:8px 0 2px;font-size:21px}.st p{margin:0}
+.fin{background:linear-gradient(135deg,var(--orange),var(--pink));border-radius:40px;color:#fff;text-align:center;padding:54px 22px}
+.fin .btn{background:#fff;color:var(--navy);box-shadow:0 6px 0 #0b2a7a55}
+footer{padding:30px 0 40px;text-align:center;color:#4a5b82;font-size:14px}
+@media(max-width:860px){.hg{grid-template-columns:1fr}.bt{grid-template-columns:1fr 1fr}.t,.w3,.w4{grid-column:span 1}}
+@media(max-width:520px){.bt{grid-template-columns:1fr}.ps .ph:nth-child(1),.ps .ph:nth-child(3){display:none}.ps .ph{width:210px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+</style></head><body>
+<header class="hero"><div class="w">
+<nav><a class="lg" href="#"><img src="data:image/png;base64,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" alt="">Pickora</a></nav>
+<div class="hg"><div>
+<h1>സ്കൂൾ വാഹന ഫീസ് ഇനി <span>എളുപ്പം.</span></h1>
+<p style="margin:14px 0 6px">സ്കൂൾ ബസ്, വാൻ ഉടമകൾക്കായി ഉണ്ടാക്കിയ ഫീസ് മാനേജർ ആപ്പ്. കുട്ടികളുടെ ഫീസ് രേഖപ്പെടുത്താം, ബാക്കി ഉള്ളവരെ WhatsApp-ൽ UPI QR സഹിതം ഓർമ്മിപ്പിക്കാം, വരവും ചെലവും ഒറ്റ ആപ്പിൽ കാണാം.</p>
+<div class="cta"><a class="btn" href="https://pickora-fee.netlify.app/">ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാം</a><a href="#screens" style="color:#fff;font-weight:700">ആപ്പ് കാണൂ</a></div>
+<div class="chips"><b>ഇന്റർനെറ്റ് ഇല്ലാതെയും പ്രവർത്തിക്കും</b><b>ആപ്പ് പോലെ ഇൻസ്റ്റാൾ ചെയ്യാം</b><b>മലയാളം ഗൈഡ്</b><b>ഒരു ലോഗിനിൽ പല വാഹനങ്ങൾ</b></div>
+</div><div class="ps"><div class="ph"><img src="img/fees.jpg" alt="ഫീസ് സ്ക്രീൻ" width="520" height="1066"></div><div class="ph"><img src="img/home.jpg" alt="ഹോം സ്ക്രീൻ" width="520" height="1066"></div><div class="ph"><img src="img/remind.jpg" alt="WhatsApp ഓർമ്മപ്പെടുത്തൽ" width="520" height="1066"></div></div></div></div></header>
+<section><div class="w"><h2>ഒരു വാഹന ഉടമയ്ക്ക് വേണ്ടതെല്ലാം</h2><p class="sub">ഒരു ആപ്പിൽ ഫീസ്, വരുമാനം, ചെലവ്, ഓർമ്മപ്പെടുത്തൽ.</p><div class="bt"><div class="t c1 w4"><div class="e">🧒</div><h3>കുട്ടികളും മാസ ഫീസും</h3><p>പേര്, സ്കൂൾ, ക്ലാസ്, സ്റ്റോപ്പ്, ഫോൺ നമ്പർ എല്ലാം ചേർക്കാം. ഓരോ മാസത്തെയും ബാക്കി തുക ആപ്പ് സ്വയം കണക്കാക്കും.</p></div><div class="t c2"><div class="e">🧮</div><h3>ഏത് തുകയും കൈകാര്യം ചെയ്യും</h3><p>രക്ഷിതാവ് ഏത് തുക തന്നാലും ഏറ്റവും പഴയ ബാക്കി മാസത്തിലേക്ക് ആദ്യം ചേർക്കും, ബാക്കി വന്നാൽ വരും മാസങ്ങളിലേക്ക്.</p></div><div class="t c3"><div class="e">💬</div><h3>WhatsApp ഓർമ്മപ്പെടുത്തൽ</h3><p>ഒറ്റ ടാപ്പിൽ രക്ഷിതാവിന്റെ ചാറ്റ് തുറന്ന് ബാക്കി തുകയും പേ ലിങ്കും അടങ്ങിയ സന്ദേശം റെഡി.</p></div><div class="t c4"><div class="e">📲</div><h3>UPI QR, Pay ബട്ടൺ</h3><p>ലിങ്ക് തുറന്നാൽ QR-ഉം "Pay with UPI app" ബട്ടണും കാണാം. GPay, PhonePe തുടങ്ങിയവയിൽ പണമടയ്ക്കാം.</p></div><div class="t c5"><div class="e">🧾</div><h3>ഉടൻ രസീത്</h3><p>പണം വാങ്ങിയ ഉടൻ WhatsApp-ൽ രസീത് അയക്കാം.</p></div><div class="t c6 w3"><div class="e">🚐</div><h3>ട്രിപ്പ്, വാടക വരുമാനം</h3><p>ട്രിപ്പ് എടുത്തവരുടെ പേരും നമ്പറും സഹിതം രേഖപ്പെടുത്താം. പണം കിട്ടിയോ ബാക്കിയാണോ എന്ന് അടയാളപ്പെടുത്താം. പകുതി തുക വാങ്ങിയാലും കണക്ക് ശരിയായി നിൽക്കും.</p></div><div class="t c7 w3"><div class="e">📊</div><h3>വരവ്, ചെലവ്, ലാഭം</h3><p>ഡീസൽ, ശമ്പളം, അറ്റകുറ്റപ്പണി, ഇൻഷുറൻസ് എല്ലാം ചേർക്കാം. ഈ മാസത്തെ ലാഭവും എല്ലാ മാസത്തെയും ബാക്കി തുകയും ഹോമിൽ കാണാം.</p></div><div class="t c8"><div class="e">🚌</div><h3>പല വാഹനങ്ങൾ</h3><p>ഒരു ലോഗിനിൽ ബസും വാനും എല്ലാം. ഒറ്റ ടാപ്പിൽ മാറാം.</p></div><div class="t c8"><div class="e">📴</div><h3>ഇന്റർനെറ്റ് ഇല്ലെങ്കിലും</h3><p>റൂട്ടിൽ നെറ്റ് ഇല്ലെങ്കിലും ജോലി തുടരാം. നെറ്റ് കിട്ടുമ്പോൾ ഡാറ്റ സ്വയം സിങ്ക് ആകും.</p></div><div class="t c8"><div class="e">💾</div><h3>ബാക്കപ്പ്</h3><p>ഡാറ്റ ഒരു ഫയലായി സൂക്ഷിക്കാം, വേണ്ടപ്പോൾ തിരികെ എടുക്കാം.</p></div><div class="t c2 w3"><div class="e">📢</div><h3>ഗ്രൂപ്പ് അറിയിപ്പ്</h3><p>രക്ഷിതാക്കളുടെ WhatsApp ഗ്രൂപ്പിലേക്ക് അവധി, റൂട്ട് മാറ്റം, ഫീസ് തീയതി എന്നിവ അയക്കാം.</p></div><div class="t c3 w3"><div class="e">🔒</div><h3>സുരക്ഷിതം, ലളിതം</h3><p>ഓരോരുത്തർക്കും സ്വന്തം ഡാറ്റ മാത്രം കാണാം. പ്ലേ സ്റ്റോർ വേണ്ട, ലിങ്ക് തുറന്ന് ഹോം സ്ക്രീനിൽ ചേർത്താൽ മതി.</p></div></div></div></section>
+<section class="gal" id="screens"><div class="w"><h2>ആപ്പ് ഇങ്ങനെയാണ്</h2><p class="sub">ഇവ ആപ്പിന്റെ യഥാർത്ഥ സ്ക്രീനുകളാണ്. പേരുകളും തുകകളും മാതൃകാ വിവരങ്ങൾ മാത്രം.</p><div class="gr"><figure><div class="ph"><img src="img/home.jpg" alt="ഹോം" width="520" height="1066" loading=lazy></div><figcaption>ഹോം</figcaption></figure><figure><div class="ph"><img src="img/students.jpg" alt="കുട്ടികൾ" width="520" height="1066" loading=lazy></div><figcaption>കുട്ടികൾ</figcaption></figure><figure><div class="ph"><img src="img/fees.jpg" alt="ഫീസ്" width="520" height="1066" loading=lazy></div><figcaption>ഫീസ്</figcaption></figure><figure><div class="ph"><img src="img/money.jpg" alt="ട്രിപ്പ് വരുമാനം" width="520" height="1066" loading=lazy></div><figcaption>ട്രിപ്പ് വരുമാനം</figcaption></figure><figure><div class="ph"><img src="img/expenses.jpg" alt="ചെലവുകൾ" width="520" height="1066" loading=lazy></div><figcaption>ചെലവുകൾ</figcaption></figure><figure><div class="ph"><img src="img/remind.jpg" alt="WhatsApp ഓർമ്മപ്പെടുത്തൽ" width="520" height="1066" loading=lazy></div><figcaption>WhatsApp ഓർമ്മപ്പെടുത്തൽ</figcaption></figure><figure><div class="ph"><img src="img/menu.jpg" alt="മെനു" width="520" height="1066" loading=lazy></div><figcaption>മെനു</figcaption></figure><figure><div class="ph"><img src="img/pay.jpg" alt="രക്ഷിതാവിന്റെ പേ പേജ്" width="520" height="1013" loading=lazy></div><figcaption>രക്ഷിതാവിന്റെ പേ പേജ്</figcaption></figure></div></div></section>
+<section><div class="w"><h2>തുടങ്ങാൻ മൂന്ന് ഘട്ടം</h2><p class="sub">വളരെ എളുപ്പം.</p>
+<div class="st"><div><h3>ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാം</h3><p>ലിങ്ക് തുറന്ന് ഹോം സ്ക്രീനിൽ ചേർക്കൂ, എന്നിട്ട് അക്കൗണ്ട് എടുക്കാം.</p></div><div><h3>വാഹനവും കുട്ടികളെയും ചേർക്കാം</h3><p>പേരും ഫീസും രക്ഷിതാവിന്റെ നമ്പറും ഒരിക്കൽ ചേർത്താൽ മതി.</p></div><div><h3>പിരിക്കാം, ഓർമ്മിപ്പിക്കാം</h3><p>പണം രേഖപ്പെടുത്തൂ, ബാക്കി ഉള്ളവർക്ക് ഓർമ്മപ്പെടുത്തൽ അയക്കൂ.</p></div></div></div></section>
 
-/* ===== full website look + full theme colour ===== */
-:root{--bg:#dfe9fb;--ac2:#d3e2fb;--bd:#c9d8f2}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081028;--ac2:#142a55;--bd:#1f3566}}
-:root[data-theme="dark"]{--bg:#081028;--ac2:#142a55;--bd:#1f3566}
-body{background:var(--bg);font-size:18px}
-.nav{background:linear-gradient(90deg,var(--g1),var(--g2));border-bottom:0;backdrop-filter:none;-webkit-backdrop-filter:none}
-.nav>div{max-width:1240px;padding:12px 24px}
-.brand{color:#fff;font-size:20px}
-.nav nav a{color:#fff;opacity:.9}.nav nav a:hover{background:rgba(255,255,255,.18);color:#fff}
-.nav .cta{background:#fff;color:var(--g1);opacity:1}.nav .cta:hover{background:#fff;color:var(--g1)}
-header{min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);display:flex;align-items:center;justify-content:center;padding:60px 24px 110px;position:relative;overflow:hidden}
-header:before,header:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.07);pointer-events:none}
-header:before{width:520px;height:520px;right:-140px;top:-160px}
-header:after{width:380px;height:380px;left:-120px;bottom:-140px}
-.hero{max-width:900px;position:relative;z-index:1}
-h1{font-size:clamp(34px,7vw,68px)}
-header p{font-size:clamp(18px,3.8vw,24px);max-width:680px}
-.eyebrow{font-size:15px;padding:5px 18px}
-.heroBtns a{padding:15px 30px;font-size:18px}
-.badges{font-size:16px;margin-top:28px}
-main{max-width:1240px;margin:-64px auto 0;padding:0 24px 56px;position:relative;z-index:2}
-.search{max-width:760px;margin:0 auto 18px}
-.card{border-top:5px solid var(--ac);padding:26px;border-radius:22px}
-h2{font-size:26px;color:var(--g1)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--tx)}}
-.quick ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
-.quick li{margin:0;flex-direction:column;gap:10px;padding:18px;background:var(--ac2);border:0}
-.tabs{grid-template-columns:repeat(4,1fr);gap:14px}
-.tabs div{background:var(--ac2);border:0;padding:20px 10px;font-size:15px}
-.tabs span{font-size:36px}
-.chips{justify-content:center;margin:26px 0 8px}
-.chips a{background:var(--ac);color:#fff;border:0;padding:9px 18px;font-weight:600}
-.chips a:hover{background:var(--g1);color:#fff}
-.row{justify-content:center}
-.btn.o{background:var(--card);border:1.5px solid var(--ac)}
-details.sec{max-width:980px;margin:0 auto 14px;border:0;border-left:6px solid var(--ac);border-radius:18px;box-shadow:var(--sh)}
-details.sec>summary{padding:20px 22px;font-size:20px}
-details.sec[open]>summary{background:linear-gradient(90deg,var(--g1),var(--g2));color:#fff;border-bottom:0}
-details.sec[open]>summary:after{color:#fff}
-.body{padding:10px 24px 24px}
-th{background:var(--ac)!important;color:#fff}
-#help{max-width:980px;margin:22px auto 0;border-top:0;padding:40px 24px}
-#help h2{color:#fff;font-size:30px}
-footer{background:linear-gradient(90deg,var(--g1),var(--g2));color:#fff;padding:30px 16px 110px;margin-top:10px;font-size:15px}
-.bar{background:linear-gradient(90deg,var(--g1),var(--g2));border-top:0}
-.bar span,.bar span b{color:#fff}.bar .btn{background:#fff;color:var(--g1)}
-.bar>div{max-width:1240px;padding:0 10px}
-@media(max-width:620px){.tabs{grid-template-columns:1fr 1fr}main{padding:0 12px 40px}header{padding:48px 16px 100px}.card{padding:18px}}
-
-/* ===== calmer, professional sizing ===== */
-body{font-size:16px;line-height:1.7;padding-bottom:0}
-.nav>div{padding:10px 24px}
-.brand{font-size:18px}.brand img{width:30px;height:30px}
-.nav nav a{font-size:14px}
-header{min-height:0;padding:64px 24px 96px;display:block}
-header:before,header:after{display:none}
-.eyebrow{font-size:13px;padding:4px 14px;margin-bottom:12px}
-h1{font-size:clamp(26px,4.2vw,40px);line-height:1.3;font-weight:700;margin-bottom:10px}
-header p{font-size:clamp(15px,2.2vw,18px);max-width:560px}
-.heroBtns{margin-top:22px}
-.heroBtns a{padding:11px 22px;font-size:15px;border-radius:10px}
-.badges{font-size:14px;margin-top:20px}
-main{margin-top:-48px}
-.card{padding:22px;border-top-width:3px;border-radius:14px}
-h2{font-size:20px;font-weight:700}
-h3{font-size:16px}
-.quick li{padding:16px;border-radius:12px}
-.quick li:before{width:30px;height:30px;font-size:15px}
-.tabs div{font-size:13.5px;padding:16px 8px;border-radius:12px}
-.tabs b{font-size:15px}.tabs span{font-size:26px}
-.chips a{font-size:14px;padding:7px 14px;background:var(--card);color:var(--ac);border:1px solid var(--bd);font-weight:500}
-.chips a:hover{background:var(--ac);color:#fff}
-.btn{font-size:15px;padding:9px 16px;border-radius:10px}
-details.sec{border-radius:12px;border-left-width:4px}
-details.sec>summary{font-size:16.5px;padding:16px 20px}
-.body{padding:8px 20px 20px}
-.tip,.warn,.good{font-size:15px}
-table{font-size:14.5px}
-footer{padding:22px 16px;font-size:14px}
-/* side whatsapp icon */
-.wa{position:fixed;right:16px;top:50%;transform:translateY(-50%);z-index:70;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .15s}
-.wa:hover{transform:translateY(-50%) scale(1.08)}
-@media(max-width:620px){.wa{right:10px;width:48px;height:48px}.wa svg{width:26px;height:26px}header{padding:48px 16px 88px}}
-@media print{.wa{display:none}}
-
-/* search bar scrolls normally; whatsapp icon at bottom right */
-.search{position:relative;top:auto}
-.wa{top:auto;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:none}
-.wa:hover{transform:scale(1.08)}
-@media(max-width:620px){.wa{bottom:calc(16px + env(safe-area-inset-bottom,0px))}}
-
-/* highlighted install CTAs */
-.nav .inst{background:#ffc926;color:#1b1500;font-weight:700;border-radius:10px;opacity:1}
-.nav .inst:hover{background:#ffd54f;color:#1b1500}
-.heroBtns .p.big{background:#ffc926;color:#1b1500;font-size:17px;padding:14px 28px;box-shadow:0 0 0 0 rgba(255,201,38,.7);animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,201,38,.65)}70%{box-shadow:0 0 0 16px rgba(255,201,38,0)}100%{box-shadow:0 0 0 0 rgba(255,201,38,0)}}
-@media (prefers-reduced-motion:reduce){.heroBtns .p.big{animation:none}}
-#s1{border-left-color:#ffc926}
-#s1 .row .btn{background:#ffc926;color:#1b1500;font-size:16px;padding:12px 20px;box-shadow:0 4px 12px rgba(255,201,38,.45)}
-.installBanner{max-width:980px;margin:26px auto 0;text-align:center;color:#fff;background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:18px;padding:36px 22px;box-shadow:var(--sh)}
-.installBanner h2{color:#fff;font-size:24px;margin:6px 0 8px}
-.installBanner p{margin:0 auto 18px;max-width:520px;opacity:.93;font-size:15.5px}
-.ib-ic{font-size:38px;line-height:1}
-.ib-btn{display:inline-block;background:#ffc926;color:#1b1500;font-weight:800;text-decoration:none;font-size:18px;padding:14px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.ib-btn:hover{background:#ffd54f}
-.ib-url{margin-top:12px;font-size:13.5px;opacity:.8}
-@media(max-width:620px){.nav .inst{padding:6px 9px;font-size:13px}.installBanner{padding:28px 16px}.installBanner h2{font-size:20px}}
-@media print{.installBanner{display:none}}
-
-/* compact bottom install banner */
-.installBanner{max-width:760px;margin:20px auto 0;padding:18px 18px;border-radius:14px;display:flex;align-items:center;gap:14px;text-align:left;flex-wrap:wrap}
-.installBanner .ib-ic{font-size:26px}
-.installBanner h2{font-size:17px;margin:0;flex:1 1 220px}
-.installBanner p,.installBanner .ib-url{display:none}
-.ib-btn{font-size:15px;padding:10px 20px;border-radius:10px;box-shadow:none;margin-left:auto}
-@media(max-width:620px){.installBanner{padding:14px;gap:10px}.installBanner h2{font-size:15.5px}.ib-btn{width:100%;text-align:center;margin:0}}
-</style>
-</head>
-<body>
-<div class="nav"><div>
-  <a class="brand" href="#top"><img src="data:image/webp;base64,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" alt="">Pickora</a>
-  
-</div></div>
-<header>
-  <div class="hero">
-    <span class="eyebrow">ഉപയോഗ സഹായി</span>
-    <h1>Pickora ഉപയോഗ സഹായി</h1>
-    <p>സ്കൂൾ വണ്ടിയുടെ ഫീസും കണക്കും · ലളിതമായ വഴികാട്ടി</p>
-    <div class="heroBtns"><a class="p big" href="https://pickora-fee.netlify.app" target="_blank" rel="noopener">ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാം</a><a class="s" href="#top">5 ചുവടിൽ തുടങ്ങാം</a><a class="s" href="https://wa.me/917306486406" target="_blank" rel="noopener">സഹായം വേണോ?</a></div>
-    <ul class="badges"><li>മലയാളത്തിൽ</li><li>ഘട്ടം ഘട്ടമായി</li><li>ഫോണിൽ എളുപ്പം</li></ul>
-  </div>
-</header>
-<main>
-
-<div class="search card" style="padding:0;border:0;background:none;box-shadow:none"><input id="q" type="search" placeholder="🔍 ഒരു വാക്ക് തിരയൂ (ഉദാ: ഫീസ്, QR, ബാക്കപ്പ്, പാസ്‌വേഡ്)"></div>
-
-<div class="card quick" id="top">
-  <h2>⚡ 5 ചുവടിൽ തുടങ്ങാം</h2>
-  <ol>
-    <li><div>ആപ്പ് തുറന്ന് <b class="k">Create account</b> അമർത്തുക. ഇമെയിലും പാസ്‌വേഡും (<b>രണ്ടുതവണ</b>) കൊടുക്കുക.</div></li>
-    <li><div>മുകളിൽ ഇടത് <b class="k">☰</b> → <b class="k">Settings</b>: വണ്ടിയുടെ പേരും UPI ID-യും ചേർത്ത് <b>Save changes</b> അമർത്തുക.</div></li>
-    <li><div>താഴെ <b class="k">Parties</b> → <b class="k">+</b>: കുട്ടികളെ ഓരോരുത്തരെയായി ചേർക്കുക.</div></li>
-    <li><div>ഫീസ് കിട്ടിയാൽ <b class="k">Fees</b> → ആ കുട്ടി → <b class="k">Mark paid</b>.</div></li>
-    <li><div>ബാക്കി ഉള്ളവർക്ക് <b class="k">Remind</b> അമർത്തി QR കോഡ് സഹിതം WhatsApp-ൽ അയയ്ക്കുക.</div></li>
-  </ol>
-  <div class="warn">മാസത്തിൽ ഒരിക്കൽ <b>ബാക്കപ്പ്</b> എടുക്കാൻ മറക്കരുത് (☰ → Backup &amp; Restore).</div>
-</div>
-
-<div class="card">
-  <h2>🗺️ ആപ്പിലെ സ്ഥലങ്ങൾ</h2>
-  <div class="tabs">
-    <div><span>🏠</span><b>Home</b>കണക്കിന്റെ ചുരുക്കം, ലാഭം</div>
-    <div><span>👥</span><b>Parties</b>കുട്ടികൾ, ട്രിപ്പ് പാർട്ടികൾ</div>
-    <div><span>💳</span><b>Fees</b>ഫീസ് വാങ്ങൽ, ബാക്കി</div>
-    <div><span>🧾</span><b>Money</b>ട്രിപ്പ് വരവ്, ചെലവ്</div>
-  </div>
-  <p style="margin:10px 0 0;font-size:15.5px">ഇവ സ്ക്രീനിന്റെ <b>താഴെ</b> കാണും. മുകളിൽ ഇടത് <b>☰</b> അമർത്തിയാൽ മെനു: Settings, Vehicles, Group notice, Account, Backup &amp; Restore.</p>
-</div>
-
-<div class="chips" id="toc">
-  <a href="#s1">📲 ഇൻസ്റ്റാൾ</a><a href="#s2">🔐 ലോഗിൻ</a><a href="#s3">⚙️ സെറ്റിങ്ങ്</a><a href="#s4">🎒 കുട്ടികൾ</a><a href="#s5">💳 ഫീസ്</a><a href="#s6">🔔 Remind</a><a href="#s7">🚌 ട്രിപ്പ്</a><a href="#s8">⛽ ചെലവ്</a><a href="#s9">📊 Home</a><a href="#s10">🚐 വണ്ടികൾ</a><a href="#s11">💾 ബാക്കപ്പ്</a><a href="#s12">📶 നെറ്റ് ഇല്ലെങ്കിൽ</a><a href="#s13">⚠️ ശ്രദ്ധിക്കാൻ</a><a href="#s14">❓ സംശയങ്ങൾ</a>
-</div>
-<div class="row"><button class="btn o" id="openAll">എല്ലാം തുറക്കുക</button><button class="btn o" id="closeAll">എല്ലാം അടയ്ക്കുക</button></div>
-
-<details class="sec" id="s1"><summary>📲 ആപ്പ് ഫോണിൽ ഇൻസ്റ്റാൾ ചെയ്യാം</summary><div class="body">
-  <div class="row"><a class="btn" href="https://pickora-fee.netlify.app" target="_blank" rel="noopener">📲 Pickora ആപ്പ് തുറക്കുക / ഇൻസ്റ്റാൾ ചെയ്യുക</a></div>
-  <p style="margin:0 0 6px;font-size:14.5px;color:var(--mu)">ലിങ്ക്: <a href="https://pickora-fee.netlify.app" target="_blank" rel="noopener">pickora-fee.netlify.app</a></p>
-  <h3>Android ഫോൺ (Chrome)</h3>
-  <ol><li>Pickora ലിങ്ക് Chrome-ൽ തുറക്കുക.</li><li>മുകളിൽ വലത് <b class="k">⋮</b> അമർത്തുക.</li><li><b class="k">Install app</b> അല്ലെങ്കിൽ <b class="k">Add to Home screen</b> അമർത്തി Install ചെയ്യുക.</li></ol>
-  <h3>iPhone (Safari)</h3>
-  <ol><li>ലിങ്ക് <b>Safari</b>-യിൽ തുറക്കുക.</li><li>താഴെ <b class="k">Share</b> ബട്ടൺ അമർത്തുക.</li><li><b class="k">Add to Home Screen</b> → <b>Add</b>.</li></ol>
-  <div class="good">ഹോം സ്ക്രീനിൽ Pickora ഐക്കൺ വരും. ഇനി ലിങ്ക് തിരയേണ്ട, ഐക്കണിൽ അമർത്തിയാൽ മതി.</div>
-  <div class="tip">ആദ്യത്തെ തവണ ഇന്റർനെറ്റ് ഓണായിരിക്കണം.</div>
-</div></details>
-
-<details class="sec" id="s2"><summary>🔐 അക്കൗണ്ട്, ലോഗിൻ, പാസ്‌വേഡ് മറന്നാൽ</summary><div class="body">
-  <h3>പുതിയ അക്കൗണ്ട്</h3>
-  <ol><li><b class="k">Create account</b> അമർത്തുക.</li><li>ഇമെയിൽ കൊടുക്കുക.</li><li><b>Password</b> (കുറഞ്ഞത് 6 അക്ഷരം) കൊടുത്ത് <b>Confirm password</b> കോളത്തിൽ അതേ പാസ്‌വേഡ് <b>വീണ്ടും</b> കൊടുക്കുക. രണ്ടും ഒരുപോലെ അല്ലെങ്കിൽ ചുവന്ന അക്ഷരത്തിൽ പറയും.</li></ol>
-  <div class="good">പുതിയ അക്കൗണ്ടിന് <b>30 ദിവസം സൗജന്യം.</b> അതിന് ശേഷം “Access expired” എന്ന് കാണും. അപ്പോഴും നിങ്ങളുടെ ഡാറ്റ നഷ്ടപ്പെടില്ല. സഹായ നമ്പറിൽ ബന്ധപ്പെട്ടാൽ വീണ്ടും തുറക്കും.</div>
-  <h3>പാസ്‌വേഡ് മറന്നാൽ</h3>
-  <ol><li>ലോഗിൻ സ്ക്രീനിൽ <b class="k">Forgot password?</b> അമർത്തുക.</li><li>ഇമെയിൽ കൊടുത്ത് <b>Send reset link</b>.</li><li>ഇമെയിൽ തുറന്ന് ലിങ്ക് <b>ഫോണിൽ</b> അമർത്തുക. ഇമെയിൽ കാണുന്നില്ലെങ്കിൽ <b>Spam</b> ഫോൾഡർ നോക്കുക.</li><li>വരുന്ന സ്ക്രീനിൽ പുതിയ പാസ്‌വേഡ് <b>രണ്ടുതവണ</b> കൊടുത്ത് <b>Save new password</b>.</li></ol>
-  <h3>പാസ്‌വേഡ് മാറ്റാൻ / ലോഗൗട്ട്</h3>
-  <p><b class="k">☰</b> → <b class="k">Account</b>. ലോഗൗട്ട് ചെയ്യുമ്പോൾ ഒരു ചോദ്യം വരും: <b>Yes, log out</b> അമർത്തിയാൽ മാത്രം പുറത്തുപോകും.</p>
-</div></details>
-
-<details class="sec" id="s3"><summary>⚙️ ആദ്യം ചെയ്യേണ്ട സെറ്റിങ്ങുകൾ</summary><div class="body">
-  <p><b class="k">☰</b> → <b class="k">Settings</b> തുറക്കുക:</p>
-  <ul>
-    <li><b>Vehicle / operator name:</b> നിങ്ങളുടെ വണ്ടിയുടെ/സ്ഥാപനത്തിന്റെ പേര്. രസീതിലും സന്ദേശങ്ങളിലും ഇത് വരും.</li>
-    <li><b>UPI ID:</b> നിങ്ങൾക്ക് പണം കിട്ടുന്ന UPI വിലാസം (ഉദാ: <i>98xxxxxxxx@okaxis</i>). GPay/PhonePe-യിൽ ഇത് കാണാം. ഇതിൽ നിന്നാണ് പേയ്‌മെന്റ് QR ഉണ്ടാകുന്നത്.</li>
-    <li><b>WhatsApp group link:</b> രക്ഷിതാക്കളുടെ ഗ്രൂപ്പിന്റെ invite link (<i>https://chat.whatsapp.com/…</i>). ഗ്രൂപ്പ് നോട്ടീസിന് വേണ്ടി.</li>
-  </ul>
-  <div class="warn">മാറ്റങ്ങൾ വരുത്തിയ ശേഷം <b>Save changes</b> അമർത്തണം. അമർത്താതെ പുറത്തുപോയാൽ “Discard changes?” എന്ന് ചോദിക്കും.</div>
-  <div class="warn"><b>UPI ID രണ്ടുതവണ പരിശോധിക്കുക.</b> ഒരു അക്ഷരം തെറ്റിയാൽ രക്ഷിതാക്കളുടെ പണം മറ്റൊരാൾക്ക് പോകാം.</div>
-  <p><b class="k">☰</b> → <b class="k">Vehicles</b>: വണ്ടിയുടെ പേരും രജിസ്ട്രേഷൻ നമ്പറും (ഓപ്ഷണൽ) മാറ്റാം. ഒന്നിലധികം വണ്ടി ഉണ്ടെങ്കിൽ ഭാഗം 10 നോക്കുക.</p>
-</div></details>
-
-<details class="sec" id="s4"><summary>🎒 കുട്ടികളെ ചേർക്കലും തിരുത്തലും</summary><div class="body">
-  <h3>പുതിയ കുട്ടി</h3>
-  <ol><li>താഴെ <b class="k">Parties</b> → മുകളിൽ <b>Students</b> ഭാഗം.</li><li>താഴെ വലതുവശത്തെ <b class="k">+</b> അമർത്തുക.</li><li>വിവരങ്ങൾ കൊടുത്ത് <b>Save</b>.</li></ol>
-  <table><tr><th>കോളം</th><th>നിർബന്ധമാണോ?</th></tr>
-  <tr><td>കുട്ടിയുടെ പേര്</td><td>✅ വേണം</td></tr>
-  <tr><td>രക്ഷിതാവിന്റെ ഫോൺ (10 അക്കം)</td><td>✅ വേണം (WhatsApp-ന് ആവശ്യം)</td></tr>
-  <tr><td>മാസ ഫീസ് (₹)</td><td>✅ വേണം</td></tr>
-  <tr><td>സ്കൂൾ, ക്ലാസ്, സ്റ്റോപ്പ്</td><td>ഓപ്ഷണൽ</td></tr></table>
-  <h3>തിരുത്താനും ഒഴിവാക്കാനും</h3>
-  <p>ലിസ്റ്റിൽ ആ കുട്ടിയെ <b>ടാപ്പ്</b> ചെയ്യുക. തുറക്കുന്ന സ്ക്രീനിൽ: <b>Payment history</b>, <b>Edit</b> (തിരുത്താൻ), <b>WhatsApp parent</b>, <b>Remove</b> (ഒഴിവാക്കാൻ).</p>
-  <div class="warn"><b>Remove</b> അമർത്തിയാൽ ആ കുട്ടിയുടെ പേയ്‌മെന്റ് രേഖകളും പോകും, തിരിച്ചെടുക്കാൻ പറ്റില്ല. അതുകൊണ്ട് ഉറപ്പ് ചോദിക്കും. സംശയമുണ്ടെങ്കിൽ മുമ്പ് ബാക്കപ്പ് എടുക്കുക.</div>
-  <div class="tip">ലിസ്റ്റിന് മുകളിലെ <b>സെർച്ച് ബോക്സിൽ</b> പേര്, ഫോൺ, സ്റ്റോപ്പ് എന്നിവ എഴുതി ആരെയും വേഗം കണ്ടെത്താം. കുട്ടികൾ A-Z ക്രമത്തിലാണ്.</div>
-  <div class="tip">ഫീസ് കണക്കാക്കുന്നത് കുട്ടിയെ ആപ്പിൽ <b>ചേർത്ത മാസം</b> മുതലാണ്.</div>
-</div></details>
-
-<details class="sec" id="s5"><summary>💳 ഫീസ് കിട്ടിയാൽ രേഖപ്പെടുത്താൻ (Mark paid)</summary><div class="body">
-  <p><b class="k">Fees</b> ടാബിൽ മുകളിൽ മൂന്ന് ബട്ടൺ: <b>Pending</b> (ബാക്കി ഉള്ളവർ), <b>Paid</b> (എല്ലാം അടച്ചവർ), <b>All</b> (എല്ലാവരും). ഓരോ കുട്ടിയുടെയും താഴെ ആകെ ബാക്കിയും ഏതൊക്കെ മാസത്തെ ബാക്കി എന്നും കാണും.</p>
-  <h3>പണം രേഖപ്പെടുത്തുന്ന വിധം</h3>
-  <ol>
-    <li>ആ കുട്ടിയുടെ <b class="k">Mark paid</b> അമർത്തുക.</li>
-    <li><b>Amount received</b> കോളത്തിൽ <b>കിട്ടിയ തുക</b> എഴുതുക. <b>എത്ര വേണമെങ്കിലും ആകാം</b>: പകുതിയോ, ഒരു മാസത്തേതോ, പല മാസത്തേതോ.</li>
-    <li>ആപ്പ് ആ തുക <b>ഏറ്റവും പഴയ ബാക്കി മാസം മുതൽ</b> തനിയെ വീതിച്ച് ചേർക്കും. താഴെ <b>“This payment will be added as”</b> എന്നിടത്ത് ഏത് മാസത്തിന് എത്ര എന്ന് സേവ് ചെയ്യുന്നതിന് മുമ്പ് കാണാം.</li>
-    <li><b>Mode</b>: Cash / UPI / Bank തിരഞ്ഞെടുക്കുക.</li>
-    <li><b>Save payment</b> അമർത്തുക.</li>
-  </ol>
-  <h3>ഉദാഹരണം</h3>
-  <p>മാസ ഫീസ് ₹1,200. ജൂലൈയിൽ ₹1,200-ഉം നവംബറിൽ ₹600-ഉം ബാക്കി (ആകെ ₹1,800):</p>
-  <table><tr><th>കിട്ടിയ തുക</th><th>എന്ത് സംഭവിക്കും</th></tr>
-  <tr><td>₹500</td><td>ജൂലൈയിൽ ₹500 കുറയും (ഭാഗികം). ജൂലൈ ₹700 ബാക്കി.</td></tr>
-  <tr><td>₹1,800</td><td>ജൂലൈയും നവംബറും തീരും.</td></tr>
-  <tr><td>₹2,500</td><td>രണ്ടും തീരും, ബാക്കി ₹700 <b>ഡിസംബറിന് മുൻകൂർ</b> (advance).</td></tr></table>
-  <h3>വേഗത്തിൽ ചെയ്യാൻ</h3>
-  <ul><li><b>All pending</b>: ബാക്കി മുഴുവൻ ഒറ്റയടിക്ക്.</li><li><b>+ next month</b>, <b>+ 3 months</b>: ബാക്കിയും വരുന്ന മാസങ്ങളും കൂടി.</li><li><b>Start from month</b>: ഏതെങ്കിലും ഒരു മാസം മുതൽ തുടങ്ങാൻ (ഉദാ: നവംബർ മാത്രം).</li></ul>
-  <div class="good">പല മാസത്തേക്ക് ഒരുമിച്ച് വാങ്ങിയാൽ <b>ഒറ്റ രസീത് സന്ദേശം</b> വരും. <b>Send receipt</b> അമർത്തി WhatsApp-ൽ അയയ്ക്കാം.</div>
-  <h3>തെറ്റ് പറ്റിയാൽ</h3>
-  <p>കുട്ടിയുടെ താഴെ <b class="k">View payment history</b> → ഓരോ മാസവും: <b>Paid / Partial / Due</b>. ഓരോ പേയ്‌മെന്റിനും <b>Receipt</b> (രസീത്), <b>Edit</b> (തിരുത്തൽ), <b>Delete</b> (ഒഴിവാക്കൽ, ഉറപ്പ് ചോദിക്കും).</p>
-  <div class="tip">മുൻകൂർ അടച്ച തുക “ബാക്കി” ആയി കണക്കാക്കില്ല. കുട്ടിയുടെ കാർഡിൽ <b>“Advance taken”</b> എന്ന് കാണിക്കും.</div>
-</div></details>
-
-<details class="sec" id="s6"><summary>🔔 ബാക്കി ഓർമ്മിപ്പിക്കാൻ (Remind, QR, ഗ്രൂപ്പ് നോട്ടീസ്)</summary><div class="body">
-  <h3>ഒരു രക്ഷിതാവിനെ ഓർമ്മിപ്പിക്കാൻ</h3>
-  <ol>
-    <li><b class="k">Fees</b> ടാബിൽ ബാക്കി ഉള്ള കുട്ടിയുടെ <b class="k">Remind</b> അമർത്തുക.</li>
-    <li>പേയ്‌മെന്റ് <b>QR കോഡും</b> സന്ദേശവും കാണും. സന്ദേശത്തിൽ ബാക്കി ഉള്ള എല്ലാ മാസവും ആകെ തുകയും ഉണ്ടാകും. QR-ലും ആകെ തുക മുൻകൂട്ടി നിറഞ്ഞിരിക്കും.</li>
-    <li><b class="k">Send QR + message</b> അമർത്തുക. ഫോണിന്റെ share ലിസ്റ്റ് തുറക്കും.</li>
-    <li><b>WhatsApp</b> തിരഞ്ഞെടുത്ത്, <b>രക്ഷിതാവിന്റെ ചാറ്റ്</b> തിരഞ്ഞെടുക്കുക. <b>ചിത്രവും സന്ദേശവും ഒരുമിച്ച്</b> പോകും. Send അമർത്തുക.</li>
-  </ol>
-  <div class="tip">ചാറ്റ് നിങ്ങൾ തന്നെ തിരഞ്ഞെടുക്കണം (രക്ഷിതാവിന്റെ നമ്പർ സ്ക്രീനിൽ കാണിക്കും, തിരയാൻ എളുപ്പം). QR ഇല്ലാതെ സന്ദേശം മാത്രം മതിയെങ്കിൽ <b>Text only</b>.</div>
-  <div class="warn">QR വരണമെങ്കിൽ <b>Settings-ൽ UPI ID</b> ചേർത്തിരിക്കണം.</div>
-  <h3>ഗ്രൂപ്പിൽ പൊതുവായ അറിയിപ്പ് (അവധി, സമയം മാറ്റം)</h3>
-  <ol>
-    <li><b class="k">☰</b> → <b class="k">Group notice</b>.</li>
-    <li>സന്ദേശം എഴുതുക, അല്ലെങ്കിൽ <b>Holiday / Time change / Fee due / Running late</b> ബട്ടൺ അമർത്തി തയ്യാറായ സന്ദേശം എടുക്കുക.</li>
-    <li><b class="k">Copy &amp; open group</b> അമർത്തുക. സന്ദേശം കോപ്പി ആകും, WhatsApp ഗ്രൂപ്പ് തുറക്കും.</li>
-    <li>ഗ്രൂപ്പിൽ <b>പേസ്റ്റ് ചെയ്ത് അയയ്ക്കുക</b>.</li>
-  </ol>
-  <div class="tip">WhatsApp ഗ്രൂപ്പിൽ ആപ്പിന് നേരിട്ട് സന്ദേശം അയയ്ക്കാൻ അനുവാദമില്ല. അതുകൊണ്ടാണ് “കോപ്പി ചെയ്ത് ഗ്രൂപ്പ് തുറക്കുക” എന്ന രീതി. ഗ്രൂപ്പ് ലിങ്ക് Settings-ൽ ചേർത്തിരിക്കണം.</div>
-</div></details>
-
-<details class="sec" id="s7"><summary>🚌 ട്രിപ്പ് / വാടക വരവും പാർട്ടികളും</summary><div class="body">
-  <p>സ്കൂൾ ഫീസല്ലാതെ കിട്ടുന്ന വരവ് (ടൂർ, വിവാഹ ഓട്ടം, ദിവസ വാടക) ഇവിടെ രേഖപ്പെടുത്തുക.</p>
-  <h3>ചേർക്കാൻ</h3>
-  <ol><li><b class="k">Money</b> ടാബ് → <b>Trip income</b> → <b class="k">+</b>.</li><li><b>Party name</b> (ആർക്ക് വേണ്ടി), <b>Mobile number</b>, ഇനം (Trip / Daily hire / Wedding / Other), <b>Amount</b>, <b>Date</b>, <b>Payment: Paid അല്ലെങ്കിൽ Pending</b>, <b>Received by</b> (Cash/UPI/Bank), <b>Note</b>.</li></ol>
-  <p>പേര്, മൊബൈൽ, കുറിപ്പ് എന്നിവ <b>നിർബന്ധമല്ല</b>. തുകയും തീയതിയും മാത്രം മതി.</p>
-  <h3>പണം പിന്നീടാണ് കിട്ടുന്നതെങ്കിൽ (Pending)</h3>
-  <ul><li><b>Mark paid</b> അമർത്തുക. കിട്ടിയ തുകയും Cash/UPI-യും തീയതിയും കൊടുക്കുക.</li><li><b>ഭാഗികമായി</b> കിട്ടിയാലും മതി. ഉദാഹരണം: ₹500-ൽ ₹300 കിട്ടിയാൽ 300 എഴുതുക. <b>ബാക്കി ₹200 pending ആയി തുടരും</b>, പിന്നീട് അതും Mark paid ചെയ്യാം.</li><li><b>Remind</b>: ബാക്കി തുകയ്ക്ക് QR സഹിതം WhatsApp-ൽ.</li></ul>
-  <div class="tip">Pending ആയ തുക <b>വരവിൽ ചേരില്ല</b>. പണം കിട്ടി Paid ആക്കുമ്പോൾ ആ മാസത്തെ വരവിൽ ചേരും.</div>
-  <h3>പാർട്ടികളുടെ കണക്ക്</h3>
-  <p><b class="k">Parties</b> ടാബ് → മുകളിൽ <b>Parties</b> ഭാഗം: ഓരോ പാർട്ടിയുടെയും ബാക്കി തുക. ഒരാളെ അമർത്തിയാൽ അവരുടെ മുഴുവൻ ഹിസ്റ്ററി, ഒറ്റ <b>Remind</b>-ൽ എല്ലാ ബാക്കിയും അയയ്ക്കാം.</p>
-  <div class="good">ഒരു കുട്ടിയുടെ രക്ഷിതാവിന്റെ ഫോൺ നമ്പറും ട്രിപ്പ് പാർട്ടിയുടെ നമ്പറും <b>ഒന്നാണെങ്കിൽ</b> ആപ്പ് ഇവരെ ഒരാളായി കാണും. സ്കൂൾ ഫീസ് ബാക്കിയും ട്രിപ്പ് ബാക്കിയും ഒരൊറ്റ സന്ദേശത്തിൽ വരും.</div>
-</div></details>
-
-<details class="sec" id="s8"><summary>⛽ ചെലവുകൾ (ഡീസൽ, ശമ്പളം, റിപ്പയർ)</summary><div class="body">
-  <ol><li><b class="k">Money</b> ടാബ് → <b>Expenses</b> → <b class="k">+</b>.</li><li>ഇനം തിരഞ്ഞെടുക്കുക: ⛽ Diesel, 🔧 Maintenance, 👨‍✈️ Driver salary, 🛡️ Insurance &amp; tax, 📦 Other.</li><li>തുകയും തീയതിയും (കുറിപ്പ് ഓപ്ഷണൽ) കൊടുത്ത് Save.</li></ol>
-  <div class="tip">ചെലവ് അന്നന്ന് ചേർത്താൽ Home-ലെ <b>ലാഭം/നഷ്ടം</b> ശരിയായി കിട്ടും. തിരുത്താനും ഒഴിവാക്കാനും ഓരോ എൻട്രിയുടെയും താഴെ <b>Edit / Delete</b> ഉണ്ട്.</div>
-</div></details>
-
-<details class="sec" id="s9"><summary>📊 Home സ്ക്രീൻ വായിക്കാൻ</summary><div class="body">
-  <p>മുകളിൽ <b>മാസം തിരഞ്ഞെടുക്കാം</b>. അതനുസരിച്ച് കണക്ക് മാറും.</p>
-  <table>
-  <tr><th>ഭാഗം</th><th>അർത്ഥം</th></tr>
-  <tr><td><b>Net profit</b></td><td>ആ മാസത്തെ വരവ് മൈനസ് ചെലവ്.</td></tr>
-  <tr><td><b>Fees received</b></td><td>ആ മാസം <b>പണം കിട്ടിയ</b> ഫീസ്. ഏത് മാസത്തെ ഫീസ് ആണെങ്കിലും (പഴയ ബാക്കി, ഈ മാസത്തേത്, മുൻകൂർ), കിട്ടിയ മാസത്തിലാണ് കൂട്ടുന്നത്.</td></tr>
-  <tr><td><b>Pending · all months</b></td><td>എല്ലാ മാസങ്ങളിലെയും ബാക്കി ആകെ, എത്ര കുട്ടികൾ ബാക്കി ഉണ്ട് എന്നും.</td></tr>
-  <tr><td><b>Expenses</b></td><td>ആ മാസത്തെ ചെലവ്.</td></tr>
-  <tr><td><b>Students</b></td><td>കുട്ടികളുടെ എണ്ണം, എല്ലാം അടച്ചവർ എത്ര.</td></tr>
-  <tr><td><b>Income vs Expenses</b></td><td>കഴിഞ്ഞ 6 മാസത്തെ വരവും ചെലവും ബാർ ചാർട്ടിൽ.</td></tr>
-  <tr><td><b>Where the money goes</b></td><td>ഡീസൽ, ശമ്പളം തുടങ്ങിയവയ്ക്ക് ചെലവിന്റെ എത്ര ശതമാനം.</td></tr></table>
-  <div class="tip">ഇതിൽ <b>വരവ് = ട്രിപ്പ് വരവ് (Paid) + കിട്ടിയ ഫീസ്</b>.</div>
-</div></details>
-
-<details class="sec" id="s10"><summary>🚐 ഒന്നിലധികം വണ്ടികൾ</summary><div class="body">
-  <p>ഒരു അക്കൗണ്ടിൽ എത്ര വണ്ടി വേണമെങ്കിലും ചേർക്കാം. <b>ഓരോ വണ്ടിയുടെയും കുട്ടികൾ, ഫീസ്, ചെലവ്, ട്രിപ്പ് വരവ്, ലാഭം എല്ലാം പൂർണമായി വേറെ വേറെ</b> ആയിരിക്കും.</p>
-  <ul>
-    <li>പുതിയ വണ്ടി: <b class="k">☰</b> → <b class="k">Vehicles</b> → <b>+ Add vehicle</b>.</li>
-    <li>വണ്ടി മാറാൻ: ഏത് സ്ക്രീനിലും മുകളിൽ കാണുന്ന <b class="k">🚌 വണ്ടിയുടെ പേര് ▾</b> അമർത്തി തിരഞ്ഞെടുക്കുക.</li>
-    <li>ഓരോ വണ്ടിക്കും സ്വന്തം <b>UPI ID, WhatsApp ഗ്രൂപ്പ് ലിങ്ക്</b> കൊടുക്കാം (ഓപ്ഷണൽ).</li>
-  </ul>
-  <div class="warn">ഒരു <b>വണ്ടി ഡിലീറ്റ്</b> ചെയ്താൽ അതിലെ എല്ലാ കുട്ടികളും പേയ്‌മെന്റുകളും ചെലവുകളും സ്ഥിരമായി പോകും. ഒന്ന് എപ്പോഴും വേണം.</div>
-</div></details>
-
-<details class="sec" id="s11"><summary>💾 ബാക്കപ്പ് (നിർബന്ധമായും മറക്കരുത്)</summary><div class="body">
-  <div class="warn"><b>ആപ്പ് തനിയെ ബാക്കപ്പ് എടുക്കില്ല.</b> അബദ്ധത്തിൽ എന്തെങ്കിലും ഡിലീറ്റ് ആയാൽ തിരിച്ചെടുക്കാനുള്ള ഏക വഴി നിങ്ങളുടെ ബാക്കപ്പ് ഫയലാണ്. <b>മാസാവസാനം ഒരിക്കൽ</b> എടുക്കുക.</div>
-  <h3>ബാക്കപ്പ് എടുക്കാൻ</h3>
-  <ol><li><b class="k">☰</b> → <b class="k">Backup &amp; Restore</b>.</li><li><b>Save to Drive / share</b> അമർത്തി Google Drive, Gmail, അല്ലെങ്കിൽ WhatsApp (നിങ്ങളുടെ സ്വന്തം നമ്പറിലേക്ക്) തിരഞ്ഞെടുക്കുക. അല്ലെങ്കിൽ <b>Download to phone</b>.</li><li>ഓപ്ഷൻ ഉണ്ടെങ്കിൽ <b>Back up to Google Drive</b>: ഡ്രൈവിൽ <i>Pickora → ആ മാസത്തിന്റെ ഫോൾഡർ → ഫയൽ</i> എന്ന ക്രമത്തിൽ സൂക്ഷിക്കും.</li></ol>
-  <h3>തിരിച്ചെടുക്കാൻ</h3>
-  <ol><li><b>Choose backup file</b> (അല്ലെങ്കിൽ <b>Restore from Drive</b>) → ഫയൽ തിരഞ്ഞെടുക്കുക.</li><li><b>Yes, restore</b> അമർത്തുക.</li></ol>
-  <div class="warn">Restore ചെയ്താൽ <b>ഇപ്പോഴുള്ള എല്ലാ ഡാറ്റയും</b> ബാക്കപ്പിലുള്ളതുകൊണ്ട് മാറ്റപ്പെടും. സംശയമുണ്ടെങ്കിൽ ആദ്യം ഒരു പുതിയ ബാക്കപ്പ് എടുക്കുക.</div>
-</div></details>
-
-<details class="sec" id="s12"><summary>📶 ഇന്റർനെറ്റ് ഇല്ലാത്തപ്പോൾ</summary><div class="body">
-  <ul>
-    <li>ആപ്പ് <b>തുറക്കും</b>. കുട്ടികളെയും ബാക്കിയും കാണാം, പുതിയത് ചേർക്കാം, തിരുത്താം.</li>
-    <li>മുകളിൽ ഓറഞ്ച് അടയാളം: <b>“Offline · 2 changes waiting to sync”</b>.</li>
-    <li>നെറ്റ് വരുമ്പോൾ തനിയെ സെർവറിലേക്ക് പോകും. നീല <b>“Syncing…”</b> കണ്ട ശേഷം അടയാളം മായും. <b>നിങ്ങൾ ഒന്നും ചെയ്യേണ്ട.</b></li>
-  </ul>
-  <div class="warn"><b>ആദ്യം ഇന്റർനെറ്റ് ഉള്ളപ്പോൾ</b> ഒരിക്കൽ ലോഗിൻ ചെയ്ത് ആപ്പ് തുറന്നിരിക്കണം. ആ ഫോണിൽ അങ്ങനെ ചെയ്തിട്ടില്ലെങ്കിൽ ഓഫ്‌ലൈനിൽ തുറക്കില്ല.</div>
-  <div class="warn"><b>ഒരേ അക്കൗണ്ട് രണ്ട് ഫോണിൽ ഒരേ സമയം ഓഫ്‌ലൈൻ ആയി</b> ഉപയോഗിക്കരുത്. രണ്ടിലും മാറ്റിയാൽ അവസാനം സിങ്ക് ആകുന്നത് ജയിക്കും, ഒരു മാറ്റം നഷ്ടപ്പെടാം.</div>
-  <p>ഓഫ്‌ലൈനിൽ <b>പറ്റാത്തവ</b>: ലോഗിൻ, WhatsApp അയയ്ക്കൽ, Google Drive ബാക്കപ്പ്, പാസ്‌വേഡ് മാറ്റൽ. സിങ്ക് ആകാത്ത മാറ്റം ഉള്ളപ്പോൾ <b>ലോഗൗട്ട് ചെയ്യാൻ പറ്റില്ല</b> (ഡാറ്റ നഷ്ടപ്പെടാതിരിക്കാൻ).</p>
-</div></details>
-
-<details class="sec" id="s13"><summary>⚠️ ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ</summary><div class="body">
-  <div class="two">
-    <div class="do"><h3>✅ ചെയ്യുക</h3><ul>
-      <li>ഫീസ് കിട്ടിയ <b>ഉടനെ</b> രേഖപ്പെടുത്തുക.</li>
-      <li>രക്ഷിതാവിന്റെ ഫോൺ <b>10 അക്കം</b> ശരിയായി കൊടുക്കുക.</li>
-      <li><b>മാസത്തിൽ ഒരിക്കൽ ബാക്കപ്പ്</b> എടുക്കുക.</li>
-      <li>UPI ID <b>രണ്ടുതവണ</b> പരിശോധിക്കുക.</li>
-      <li>ചെലവ് അന്നന്ന് ചേർക്കുക.</li>
-      <li>ആദ്യം ഒന്ന് രണ്ട് കുട്ടികളെ വച്ച് പരീക്ഷിച്ച് നോക്കുക.</li>
-      <li>ഫോണിന് ലോക്ക് വയ്ക്കുക.</li></ul></div>
-    <div class="dont"><h3>❌ ചെയ്യരുത്</h3><ul>
-      <li>പാസ്‌വേഡ് ആരുമായും <b>പങ്കിടരുത്</b>.</li>
-      <li><b>Remove / Delete</b> ചിന്തിക്കാതെ അമർത്തരുത് (തിരിച്ചെടുക്കാൻ ബാക്കപ്പ് മാത്രമേ വഴിയുള്ളൂ).</li>
-      <li>രണ്ട് ഫോണിൽ ഒരേ സമയം ഓഫ്‌ലൈൻ ജോലി ചെയ്യരുത്.</li>
-      <li>തെറ്റായ UPI ID കൊടുക്കരുത്.</li>
-      <li>കുട്ടിയുടെ ഫോൺ നമ്പർ ഇല്ലാതെ വിടരുത് (റിമൈൻഡർ അയയ്ക്കാൻ പറ്റില്ല).</li></ul></div>
-  </div>
-  <h3>മറ്റ് ചെറിയ കാര്യങ്ങൾ</h3>
-  <ul>
-    <li>തീയതികൾ <b>ദിവസം-മാസം-വർഷം</b> (09-11-2026) രീതിയിൽ ആണ് കാണിക്കുക.</li>
-    <li>ഫോണിന്റെ <b>Back ബട്ടൺ</b> ഓരോ സ്ക്രീനും പിന്നോട്ട് കൊണ്ടുപോകും. Home-ൽ എത്തിയാൽ “Exit Pickora?” എന്ന് ചോദിക്കും.</li>
-    <li>എന്തെങ്കിലും ഡിലീറ്റ് ചെയ്യുമ്പോൾ എപ്പോഴും <b>ഉറപ്പ് ചോദിക്കും</b>. വായിച്ച ശേഷം മാത്രം “Yes” അമർത്തുക.</li>
-    <li>ഫ്രീ ട്രയൽ/കാലാവധി തീയതി <b class="k">☰</b> → <b>Settings</b>-ൽ കാണാം.</li>
-    <li>ഓരോ ഓപ്പറേറ്റർക്കും സ്വന്തം അക്കൗണ്ട്. നിങ്ങളുടെ കുട്ടികളുടെ വിവരങ്ങൾ മറ്റ് ഓപ്പറേറ്റർമാർക്ക് കാണാൻ പറ്റില്ല.</li>
-  </ul>
-</div></details>
-
-<details class="sec" id="s14"><summary>❓ സാധാരണ സംശയങ്ങൾ</summary><div class="body">
-  <h3>ഫോൺ മാറ്റിയാൽ ഡാറ്റ പോകുമോ?</h3>
-  <p>ഇല്ല. പുതിയ ഫോണിൽ ആപ്പ് തുറന്ന് <b>അതേ ഇമെയിലും പാസ്‌വേഡും</b> കൊണ്ട് ലോഗിൻ ചെയ്താൽ എല്ലാം കാണും.</p>
-  <h3>ഒരു പേയ്‌മെന്റ് തെറ്റി ചേർത്തു, എന്ത് ചെയ്യും?</h3>
-  <p><b>Fees</b> → ആ കുട്ടി → <b>View payment history</b> → പേയ്‌മെന്റിന്റെ <b>Edit</b> (തുക/തീയതി മാറ്റാൻ) അല്ലെങ്കിൽ <b>Delete</b>.</p>
-  <h3>രക്ഷിതാവിന്റെ WhatsApp ചാറ്റ് തുറക്കുന്നില്ല</h3>
-  <p>കുട്ടിയുടെ ഫോൺ നമ്പർ ശരിയാണോ (10 അക്കം) എന്ന് നോക്കുക: കുട്ടിയെ ടാപ്പ് ചെയ്ത് <b>Edit</b>.</p>
-  <h3>QR കോഡ് വരുന്നില്ല</h3>
-  <p><b>Settings</b>-ൽ UPI ID ചേർത്തിട്ടുണ്ടോ എന്ന് നോക്കുക, ഇന്റർനെറ്റ് ഉണ്ടോ എന്നും.</p>
-  <h3>ഒരു കുട്ടി നിർത്തി, എന്ത് ചെയ്യും?</h3>
-  <p>കുട്ടിയെ ടാപ്പ് ചെയ്ത് <b>Remove</b>. പഴയ പേയ്‌മെന്റ് രേഖകൾ കൂടി പോകുമെന്ന് ഓർക്കുക, വേണമെങ്കിൽ മുമ്പ് ബാക്കപ്പ് എടുക്കുക.</p>
-  <h3>ആപ്പിൽ പുതിയ മാറ്റം കാണുന്നില്ല</h3>
-  <p>ആപ്പ് പൂർണമായി അടച്ച് (recent apps-ൽ നിന്ന് നീക്കി) ഇന്റർനെറ്റ് ഓണാക്കി വീണ്ടും തുറക്കുക. ചിലപ്പോൾ രണ്ടുതവണ വേണ്ടി വരും.</p>
-  <h3>ഇമെയിൽ വരുന്നില്ല (പാസ്‌വേഡ് മാറ്റാൻ)</h3>
-  <p><b>Spam</b> ഫോൾഡർ നോക്കുക. കുറച്ച് മിനിറ്റ് കാത്തിരിക്കുക. ഇല്ലെങ്കിൽ താഴെ കൊടുത്ത സഹായ നമ്പറിൽ ബന്ധപ്പെടുക.</p>
-</div></details>
-
-<div id="none">ഈ വാക്ക് കണ്ടില്ല. വേറെ വാക്ക് ശ്രമിക്കൂ.</div>
-<section class="installBanner" id="install">
-  <div class="ib-ic">📲</div>
-  <h2>Pickora ആപ്പ് ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്യാം</h2>
-  <p>ഒരു ലിങ്ക് തുറന്ന് ഫോണിൽ ചേർത്താൽ മതി. ഇൻസ്റ്റാൾ ചെയ്യാനുള്ള വഴി മുകളിലെ "ഇൻസ്റ്റാൾ" വിഭാഗത്തിൽ ഉണ്ട്.</p>
-  <a class="ib-btn" href="https://pickora-fee.netlify.app" target="_blank" rel="noopener">ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാം →</a>
-  <div class="ib-url">pickora-fee.netlify.app</div>
-</section>
-</main>
-<footer>Pickora · Smart Pick-up. Safe Drop.</footer>
-
-<a class="wa" href="https://wa.me/917306486406" target="_blank" rel="noopener" aria-label="WhatsApp-ൽ സഹായം ചോദിക്കാം" title="WhatsApp സഹായം"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.800 1.500 5.600 1.500 7 0 12.700-5.600 12.700-12.500S23 3 16 3zm0 22.900c-1.800 0-3.500-.5-5-1.400l-.4-.2-4.400 1.100 1.200-4.200-.3-.4a10 10 0 0 1-1.600-5.400C5.500 9.900 10.200 5.400 16 5.400s10.500 4.500 10.500 10.100S21.800 25.900 16 25.900zm5.800-7.500c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.500 8.500 0 0 1-4.200-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400s-1.200 1.200-1.200 2.800 1.200 3.300 1.400 3.500 2.400 3.700 5.800 5.100c2.100.9 2.900.9 3.900.8.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.3z"/></svg></a>
-<script>
-(function(){
-  var secs=[].slice.call(document.querySelectorAll('details.sec'));
-  var q=document.getElementById('q'),none=document.getElementById('none');
-  q.addEventListener('input',function(){
-    var v=q.value.trim().toLowerCase(),any=false;
-    secs.forEach(function(d){var hit=!v||d.textContent.toLowerCase().indexOf(v)>-1;d.style.display=hit?'':'none';if(v&&hit)d.open=true;if(hit)any=true});
-    none.style.display=any?'none':'block';
-  });
-  document.getElementById('openAll').onclick=function(){secs.forEach(function(d){d.open=true})};
-  document.getElementById('closeAll').onclick=function(){secs.forEach(function(d){d.open=false})};
-  function openHash(){var id=(location.hash||'').slice(1),el=id&&document.getElementById(id);if(el&&el.tagName==='DETAILS'){el.open=true}}
-  window.addEventListener('hashchange',openHash);openHash();
-})();
-</script>
-</body>
-</html>
+<footer><p style="margin:0 0 10px"><a href="https://pickora-fee.netlify.app/" style="color:var(--navy);font-weight:700">ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാം</a></p>© Pickora · Smart Pick-up. Safe Drop. · കേരളത്തിലെ സ്കൂൾ വാഹന ഉടമകൾക്കായി</footer>
+</body></html>
